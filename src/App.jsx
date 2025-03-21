@@ -2,11 +2,12 @@ import { useState } from "react"
 
 function App() {
   const [nome, setNome] = useState('Ronaldo')
-  return (
-    <div>
-      <h3>pizzaria2E</h3>
 
-      <input
+
+const Formulario = ()=>{
+  return(
+    <div>
+        <input
         className="nome"
         onChange={(e)=>{setNome(e.target.value)}}
         type=" text" />
@@ -16,6 +17,19 @@ function App() {
       >
         CLIQUE AQUI
       </button>
+    </div>
+  )
+}
+
+
+  return (
+    <div>
+      <h3>pizzaria2E</h3>
+
+      <Formulario />
+      <Formulario />
+      <Formulario/>
+      <Formulario />
 
 
 
